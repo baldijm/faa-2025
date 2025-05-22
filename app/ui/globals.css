@@ -1,25 +1,77 @@
+@import './satoshi.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+  --h-intro: calc(100dvh - 80px);
+  --border-b-x: rgba(47,51,54,1);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #000000;
+    --foreground: #ffffff;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Satoshi-Variable', sans-serif;
 }
 
-.scrollbar-hide {
-  scrollbar-width:none;
+/*custom classes*/
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
+
+
+.mask-test {
+  position: relative;
+}
+
+.mask-test::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px; /* Ajusta según sea necesario */
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0) 70%);
+  pointer-events: none;
+}
+
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajusta los valores según el efecto deseado */
+}
+
+/* Puedes agregar esto en tu archivo CSS global */
+.white-drop-shadow {
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1), 0 1px 3px rgba(255, 255, 255, 0.08);
+}
+
+
+.containerx {
+  display: grid;
+  grid-template-rows: 80px auto 1fr auto 50px;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "left-aside banner right-aside"
+    "left-aside main right-aside"
+    "left-aside low-content right-aside"
+    "footer footer footer";
+  grid-gap:5px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  height: 100vh;
+  transition: 1s;
+  }
