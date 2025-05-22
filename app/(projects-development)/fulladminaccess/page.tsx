@@ -9,7 +9,7 @@ export default function FaaHome() {
       <div className='relative z-10'>
         <FullNav1/>
         <HeroSectionFull/>
-        <div className='bg-white h-[200px]'> test</div>
+        <div className='bg-white h-[200px]'> test 2</div>
       </div>
         <SvgBg/>
     </div>
