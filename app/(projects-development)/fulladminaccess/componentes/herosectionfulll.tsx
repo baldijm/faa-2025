@@ -10,11 +10,12 @@ export default function HeroSectionFull() {
                 <h1 className='font-satoshi-black text-[53px] leading-tight grid gap-0'>Tu espacio digital.<span>A tu manera.</span></h1>
                 <p>Cada negocio, idea u oficio merece presencia propia. Creamos soluciones digitales que se sienten tuyas.</p>
                 <div className='mt-[2rem]'>
-                <Link href={''} className='font-satoshi-black border p-3'>Demos</Link>
+                <Link href={''} className='font-satoshi-black border p-3'>Explorar soluciones</Link>
                 </div>
                 </div>
             </div>
-            <div className='w-full flex justify-center items-center h-full'>Graphics Example Section</div>
+            <div className='w-full flex justify-center items-center h-full'>
+            </div>
         </div>
     </div>
   )
