@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const appLinks = [
   { href: "/workout-tracker", name: "Workout Tracker" },
-  // Agrega más apps si lo deseas
+  { href: "/test-area", name: "Test Area" },
 ];
 
 const projectLinks = [

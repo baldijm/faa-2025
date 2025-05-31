@@ -21,7 +21,7 @@ export default function RootLayout({
       <head>
         <FontPreloader/>
       </head>
-      <body className="h-max flex flex-col scrollbar-hide font-satoshi">
+      <body className="h-max flex flex-col font-satoshi">
         <ScrollSaver/>
         {children}
       </body>

@@ -8,13 +8,13 @@ import React from 'react'
 export default function TransviumHome() {
   return (
     <div id="scroll-container" className='h-full w-full flex flex-col'>
-      <div className='lg:h-[calc(100dvh-4.4rem)] md:h-max xs:h-max  w-full relative flex flex-col'>
+      <div className='lg:h-screen md:h-screen from-ml-to-b:h-[85dvh]  w-full relative flex flex-col'>
         <VideoTest/>
         <div className='mt-[3rem] gap-[2rem] h-full relative p-[1rem] flex flex-col'>
           <HeroSectionTransvium/>
-          <Cards/>
         </div>
       </div>
+      <Cards/>
       <HowItWorks/>
       <FooterTransvium/>
     </div>

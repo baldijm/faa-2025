@@ -21,7 +21,9 @@ export default {
         'satoshi-medium': ['Satoshi-Medium', 'sans-serif'],
       },
       screens: {
-        'xs': {'max': '420px'},
+        'xs': {'max': '320px'},
+        'sm': {'max': '375px'},
+        'from-ml-to-b': {'max': '431px'},
       }
     },
   },

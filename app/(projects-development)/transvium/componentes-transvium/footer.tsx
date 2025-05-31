@@ -1,11 +1,15 @@
+import SVGTransvium from "@/app/(my-apps)/test-area/(componentes)/svgtrans";
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/outline";
 
 export default function FooterTransvium() {
   return (
     <footer className="bg-zinc-950 text-zinc-400 px-6 py-10 mt-16 text-sm">
-      <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-3">
-        <div>
-          <h3 className="text-white font-satoshi-bold text-lg mb-2">Transvium</h3>
+      <div className="max-w-6xl mx-auto grid gap-3 md:grid-cols-3">
+        <div className="flex flex-col gap-1">
+          <div className="flex items-center h-[2rem]">
+            <SVGTransvium/>
+            <h3 className="text-white font-satoshi-bold text-lg">Transvium</h3>
+          </div>          
           <p>Soluciones logísticas integrales para negocios globales.</p>
         </div>
         <div>
